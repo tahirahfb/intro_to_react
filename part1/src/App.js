@@ -13,12 +13,19 @@
     </div>
     )
   }
+  const Part = (props) => {
+    return (
+      <div>
+        <p>{props.name}, Exercise:{props.number}</p>
+      </div>
+    )
+  }
   const Content = () => {
     return (
       <div>
-        <p>{part1}, Exercises: {exercises1}</p>
-        <p>{part2}, Exercises: {exercises2}</p>
-        <p>{part3}, Exercises: {exercises3}</p>
+        <Part name={part1} number={exercises1} />
+        <Part name={part2} number={exercises2} />
+        <Part name={part3} number={exercises3} />
       </div>
     )
   }
